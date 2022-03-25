@@ -23,7 +23,6 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 530px) {
   .footer-container .footer {
-    align-items: stretch;
     padding: 0;
   }
   .footer-container .footer ul {
