@@ -1,0 +1,6 @@
+{
+  "watchFolder": "src/styles/Less",
+  "outputFolder": "src/styles/",
+  "runOnce": false,
+  "enableJs": true
+}
