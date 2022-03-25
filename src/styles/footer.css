@@ -6,14 +6,14 @@
 }
 .footer-container {
   display: flex;
-  background: #4d565b;
+  background: linear-gradient(to bottom, #e924cf, #c84cf5 70.71%);
   justify-content: flex-end;
   align-items: flex-end;
 }
 .footer-container .footer {
   position: relative;
   width: 100%;
-  background: #4d565b;
+  background: linear-gradient(to bottom, #e924cf, #c84cf5 70.71%);
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -21,7 +21,7 @@
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (min-width: 320px) and (max-width: 530px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   .footer-container .footer {
     padding: 0;
   }
