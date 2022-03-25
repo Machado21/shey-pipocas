@@ -10,28 +10,16 @@ const Header = (props) => {
           </div>
           <nav className="menu">
             <ul className="menu-list">
-              <li
-                className="menu-list__item"
-                onClick={() => props.setNavbarClick("Sobre")}
-              >
+              <li className="menu-list__item" onClick={() => props.setNavbarClick("Home")}>
                 <p className="menu-list__link">Home</p>
               </li>
-              <li
-                className="menu-list__item"
-                onClick={() => props.setNavbarClick("Planos")}
-              >
+              <li className="menu-list__item" onClick={() => props.setNavbarClick("Sobre")}>
                 <p className="menu-list__link">Sobre</p>
               </li>
-              <li
-                className="menu-list__item"
-                onClick={() => props.setNavbarClick("Modelos")}
-              >
+              <li className="menu-list__item" onClick={() => props.setNavbarClick("Fotos")}>
                 <p className="menu-list__link">Fotos</p>
               </li>
-              <li
-                className="menu-list__item"
-                onClick={() => props.setNavbarClick("Contatos")}
-              >
+              <li className="menu-list__item" onClick={() => props.setNavbarClick("Contatos")}>
                 <p className="menu-list__link">Contato</p>
               </li>
             </ul>
