@@ -5,21 +5,6 @@
 .Shey-theme-4-hex { color: #C22B3A; }
 .Shey-theme-5-hex { color: #FF3019; }
 
-/* Color Theme Swatches in RGBA */
-.Shey-theme-1-rgba { color: rgba(200, 119, 230, 1); }
-.Shey-theme-2-rgba { color: rgba(255, 227, 255, 1); }
-.Shey-theme-3-rgba { color: rgba(217, 124, 176, 1); }
-.Shey-theme-4-rgba { color: rgba(194, 43, 58, 1); }
-.Shey-theme-5-rgba { color: rgba(255, 48, 25, 1); }
-
-/* Color Theme Swatches in HSLA */
-.Shey-theme-1-hsla { color: hsla(283, 68, 68, 1); }
-.Shey-theme-2-hsla { color: hsla(300, 100, 94, 1); }
-.Shey-theme-3-hsla { color: hsla(326, 55, 66, 1); }
-.Shey-theme-4-hsla { color: hsla(354, 63, 46, 1); }
-.Shey-theme-5-hsla { color: hsla(6, 100, 54, 1); }
-
-
 ############################
 
 
@@ -30,16 +15,3 @@
 .color-theme_image-4-hex { color: #F2D8D5; }
 .color-theme_image-5-hex { color: #BF5656; }
 
-/* Color Theme Swatches in RGBA */
-.color-theme_image-1-rgba { color: rgba(153, 184, 191, 1); }
-.color-theme_image-2-rgba { color: rgba(242, 210, 182, 1); }
-.color-theme_image-3-rgba { color: rgba(242, 228, 216, 1); }
-.color-theme_image-4-rgba { color: rgba(242, 216, 213, 1); }
-.color-theme_image-5-rgba { color: rgba(191, 86, 86, 1); }
-
-/* Color Theme Swatches in HSLA */
-.color-theme_image-1-hsla { color: hsla(191, 22, 67, 1); }
-.color-theme_image-2-hsla { color: hsla(27, 69, 83, 1); }
-.color-theme_image-3-hsla { color: hsla(27, 49, 89, 1); }
-.color-theme_image-4-hsla { color: hsla(6, 52, 89, 1); }
-.color-theme_image-5-hsla { color: hsla(0, 45, 54, 1); }
