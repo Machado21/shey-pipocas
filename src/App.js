@@ -1,4 +1,4 @@
-import "./styles/reset.css"
+import "./styles/reset.css";
 import "./styles/app.css";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
@@ -93,9 +93,10 @@ const App = () => {
         <h1>Contatos</h1>
         <img src="/images/logo-shey.jpeg" alt="logo da shey pipocas gourmet" />
       </div>
-      <Footer />
+      <Footer setNavbarClick={setNavbarClick} />
     </div>
   );
 };
 
 export default App;
+//layout example https://www.bingingwithbabish.com/#top

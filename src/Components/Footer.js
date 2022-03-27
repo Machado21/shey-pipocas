@@ -1,6 +1,6 @@
 import "../styles/footer.css";
 import { BsFacebook, BsTwitter, BsLinkedin } from "react-icons/bs";
-const Footer = (props) => {
+const Footer = ({ setNavbarClick }) => {
   return (
     <footer className="total-footer">
       <div className="footer-container">
@@ -23,17 +23,17 @@ const Footer = (props) => {
             </li>
           </ul>
           <ul className="menu">
-            <li className="menu__item" onClick={() => props.setNavbarClick("Sobre")}>
+            <li className="menu__item" onClick={() => setNavbarClick("Home")}>
+              <p className="menu__link">Home</p>
+            </li>
+            <li className="menu__item" onClick={() => setNavbarClick("Sobre")}>
               <p className="menu__link">Sobre</p>
             </li>
-            <li className="menu__item" onClick={() => props.setNavbarClick("Planos")}>
-              <p className="menu__link">Planos</p>
+            <li className="menu__item" onClick={() => setNavbarClick("Fotos")}>
+              <p className="menu__link">Fotos</p>
             </li>
-            <li className="menu__item" onClick={() => props.setNavbarClick("Modelos")}>
-              <p className="menu__link">Modelos</p>
-            </li>
-            <li className="menu__item" onClick={() => props.setNavbarClick("Contatos")}>
-              <p className="menu__link">Contato</p>
+            <li className="menu__item" onClick={() => setNavbarClick("Contatos")}>
+              <p className="menu__link">Contatos</p>
             </li>
           </ul>
           <p>&copy;Rodrigues Desenvolvimento</p>
