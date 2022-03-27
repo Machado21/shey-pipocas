@@ -2,42 +2,41 @@ import "../styles/header.css";
 
 const Header = (props) => {
   return (
-    <header className="total-header">
-      <div className="header-container">
-        <div className="header">
-          <div className="logo">
-            <img src="/images/logo-shey.jpeg" alt="logo da shey pipocas gourmet" />
-          </div>
-          <nav className="menu">
-            <ul className="menu-list">
-              <li
-                className="menu-list__item"
-                onClick={() => props.setNavbarClick("Sobre")}
-              >
-                <p className="menu-list__link">Home</p>
-              </li>
-              <li
-                className="menu-list__item"
-                onClick={() => props.setNavbarClick("Planos")}
-              >
-                <p className="menu-list__link">Sobre</p>
-              </li>
-              <li
-                className="menu-list__item"
-                onClick={() => props.setNavbarClick("Modelos")}
-              >
-                <p className="menu-list__link">Fotos</p>
-              </li>
-              <li
-                className="menu-list__item"
-                onClick={() => props.setNavbarClick("Contatos")}
-              >
-                <p className="menu-list__link">Contato</p>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+    <header className="header">
+      <img
+        src="/images/logo.png"
+        alt="logo da shey pipocas gourmet"
+        className="header__logo"
+      />
+
+      <nav className="menu">
+        <ul className="menu-list">
+          <li
+            className="menu-list__item"
+            onClick={() => props.setNavbarClick("Sobre")}
+          >
+            <a className="menu-list__link">Home</a>
+          </li>
+          <li
+            className="menu-list__item"
+            onClick={() => props.setNavbarClick("Planos")}
+          >
+            <a className="menu-list__link">Sobre</a>
+          </li>
+          <li
+            className="menu-list__item"
+            onClick={() => props.setNavbarClick("Modelos")}
+          >
+            <a className="menu-list__link">Fotos</a>
+          </li>
+          <li
+            className="menu-list__item"
+            onClick={() => props.setNavbarClick("Contatos")}
+          >
+            <a className="menu-list__link">Contato</a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };
