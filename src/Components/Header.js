@@ -2,7 +2,7 @@ import "../styles/header.css";
 
 const Header = (props) => {
   return (
-    <header className="header">
+    <header className="header container">
       <img
         src="/images/logo.png"
         alt="logo da shey pipocas gourmet"

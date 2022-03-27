@@ -7,7 +7,6 @@
 
 ############################
 
-
 /* Color Theme Swatches in Hex */
 .color-theme_image-1-hex { color: #99B8BF; }
 .color-theme_image-2-hex { color: #F2D2B6; }
