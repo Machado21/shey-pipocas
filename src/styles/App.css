@@ -13,7 +13,8 @@
 
   --color__font__03: #c22a39;
   --color__primary__03: #fda11c;
-  --color__background__03: #d97bb0;
+  --color__background__03: #ffe9ed;
+  --color__background__dark__03: #d97bb0;
 }
 
 body {
