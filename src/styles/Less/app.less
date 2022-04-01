@@ -1,3 +1,5 @@
+@import "colors.less";
+@import "mediaQuery.less";
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
@@ -5,4 +7,31 @@ body {
 
 .container {
   padding: 0 6%;
+}
+
+.App {
+  .Home {
+    color: @color__font__03;
+    position: relative;
+    white-space: nowrap;
+    h1 {
+      font-size: 4rem;
+      color: #ffabdb;
+      text-shadow: 1px 1px 1px black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%); /* iOS */
+      transform: translate(-50%, -50%);
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100vh;
+    }
+    @media @phone {
+      white-space: inherit;
+    }
+  }
+  overflow-x: hidden;
 }

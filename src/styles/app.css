@@ -5,3 +5,32 @@ body {
 .container {
   padding: 0 6%;
 }
+.App {
+  overflow-x: hidden;
+}
+.App .Home {
+  color: #c22a39;
+  position: relative;
+  white-space: nowrap;
+}
+.App .Home h1 {
+  font-size: 4rem;
+  color: #ffabdb;
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  /* iOS */
+  transform: translate(-50%, -50%);
+}
+.App .Home img {
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .App .Home {
+    white-space: inherit;
+  }
+}
