@@ -10,13 +10,20 @@ body {
 }
 
 .App {
+  h1 {
+    font-size: 2.5rem;
+    color: @font-color2;
+    display: flex;
+    justify-content: center;
+  }
+  color: @font-color2;
   .Home {
     color: @color__font__03;
     position: relative;
     white-space: nowrap;
     h1 {
       font-size: 4rem;
-      color: #ffabdb;
+      color: @font-color2;
       text-shadow: 1px 1px 1px black;
       position: absolute;
       top: 50%;
@@ -31,6 +38,26 @@ body {
     }
     @media @phone {
       white-space: inherit;
+    }
+  }
+  .Sobre {
+  }
+  .Fotos {
+    .images {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2%;
+      padding: 2%;
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 70vh;
+        &:hover {
+          transform: translateY(-5%);
+          transition: 0.4s;
+        }
+        transition: 0.4s;
+      }
     }
   }
   overflow-x: hidden;
