@@ -9,25 +9,32 @@
   .menu__title {
     font-size: 2em;
     font-weight: 500;
+    color: @font-color;
+
     margin: 1rem;
+
+    text-shadow: 1px 1px 5px @font-color2;
   }
 
-  .menu__flavors-item {
+  .menu__flavors {
+    @media @phone {
+      width: 90%;
+    }
+  }
+  .table__head {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
 
-    align-items: center;
+    background-color: @font-color;
+    color: @font-white;
 
-    width: 100%;
+    margin: inherit;
 
-    margin: 1rem auto;
+    border-radius: 10px;
 
-    &:first-child {
-      background-color: @font-color;
-      color: @font-white;
-
-      border-radius: 10px;
-    } 
+    @media @phone {
+      grid-template-columns: 4fr 3fr 3fr;
+    }
 
     th {
       width: 3.5rem;
@@ -39,12 +46,24 @@
       margin: 0 auto;
       padding: 0.5rem;
     }
+  }
+
+  .menu__flavors-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    justify-items: center;
+
+    width: 100%;
+
+    margin: 1rem auto;
 
     td {
       margin: 0 2rem;
       color: @font-color;
       font-weight: 500;
     }
+
     &:nth-child(even) {
       background-color: #df9ab1;
       color: @font-white;
@@ -53,8 +72,9 @@
 
       padding: 0.4rem 0;
     }
+
     td:first-child {
-      text-align: start;
+      justify-self: start;
     }
   }
 }

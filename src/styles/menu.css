@@ -6,27 +6,42 @@
 .menu .menu__title {
   font-size: 2em;
   font-weight: 500;
+  color: #c22a39;
   margin: 1rem;
+  text-shadow: 1px 1px 5px #ffabdb;
 }
-.menu .menu__flavors-item {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .menu .menu__flavors {
+    width: 90%;
+  }
+}
+.menu .table__head {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  width: 100%;
-  margin: 1rem auto;
-}
-.menu .menu__flavors-item:first-child {
+  grid-template-columns: 2fr 1fr 1fr;
   background-color: #c22a39;
   color: #fff;
+  margin: inherit;
   border-radius: 10px;
 }
-.menu .menu__flavors-item th {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .menu .table__head {
+    grid-template-columns: 4fr 3fr 3fr;
+  }
+}
+.menu .table__head th {
   width: 3.5rem;
   font-size: 1.2em;
   font-weight: 600;
   text-align: center;
   margin: 0 auto;
   padding: 0.5rem;
+}
+.menu .menu__flavors-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+  margin: 1rem auto;
 }
 .menu .menu__flavors-item td {
   margin: 0 2rem;
@@ -40,5 +55,5 @@
   padding: 0.4rem 0;
 }
 .menu .menu__flavors-item td:first-child {
-  text-align: start;
+  justify-self: start;
 }
