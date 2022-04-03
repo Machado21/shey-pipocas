@@ -1,14 +1,64 @@
-:root {
-  --color__font__03: #c22a39;
-  --color__primary__03: #fda11c;
-  --color__background__03: #ffe9ed;
-  --color__background__dark__03: #d97bb0;
-}
-
+@import "colors.less";
+@import "mediaQuery.less";
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
   padding: 0 6%;
+}
+
+.App {
+  h1 {
+    font-size: 2.5rem;
+    color: @font-color2;
+    display: flex;
+    justify-content: center;
+  }
+  color: @font-color2;
+  .Home {
+    color: @color__font__03;
+    position: relative;
+    white-space: nowrap;
+    h1 {
+      font-size: 4rem;
+      color: @font-color2;
+      text-shadow: 1px 1px 1px black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%); /* iOS */
+      transform: translate(-50%, -50%);
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100vh;
+    }
+    @media @phone {
+      white-space: inherit;
+    }
+  }
+  .Sobre {
+  }
+  .Fotos {
+    .images {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2%;
+      padding: 2%;
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 70vh;
+        &:hover {
+          transform: translateY(-5%);
+          transition: 0.4s;
+        }
+        transition: 0.4s;
+      }
+    }
+  }
+  overflow-x: hidden;
 }

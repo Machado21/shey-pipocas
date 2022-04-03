@@ -71,12 +71,14 @@ const App = () => {
           }
         }}
       >
-        <h1>Home</h1>
-        <img
+        {/* <img
           src="/images/home-popcorn.jpg"
           alt="logo da shey pipocas gourmet"
           title="Credit: Photo by Yulia Khlebnikova at https://unsplash.com/photos/iuwMdNq0-s4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-        />
+        /> */}
+        <img src="/images/popcorn-nutella.jpg" alt="logo da shey pipocas gourmet" />
+
+        <h1>Pipocas Gourmet para toda família</h1>
       </div>
       <div
         className="Menu"
@@ -99,7 +101,14 @@ const App = () => {
         }}
       >
         <h1>Fotos</h1>
-        <img src="/images/logo-shey.jpeg" alt="logo da shey pipocas gourmet" />
+        <div className="images">
+          <img src="/images/popcorn-nutella.jpg" alt="logo da shey pipocas gourmet" />
+          <img src="/images/logo-popcorn.jpg" alt="logo da shey pipocas gourmet" />
+          <img src="/images/bags.png" alt="logo da shey pipocas gourmet" />
+          <img src="/images/bags-2.png" alt="logo da shey pipocas gourmet" />
+          <img src="/images/bags-funny.png" alt="logo da shey pipocas gourmet" />
+          <img src="/images/bags-small.png" alt="logo da shey pipocas gourmet" />
+        </div>
       </div>
       <div
         className="Contatos"
