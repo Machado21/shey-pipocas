@@ -53,6 +53,12 @@ body {
     gap: 0.5%;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+  .App .Fotos .images {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5%;
+  }
+}
 .App .Fotos .images img {
   width: 100%;
   object-fit: cover;
@@ -63,4 +69,9 @@ body {
   transform: translateY(-3%);
   transition: 0.4s;
   cursor: pointer;
+}
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+  .App .Fotos .images img {
+    height: 45vh;
+  }
 }
