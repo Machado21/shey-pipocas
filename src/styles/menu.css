@@ -13,15 +13,11 @@
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   width: 100%;
-  margin: 1.6rem auto;
+  margin: 1rem auto;
 }
 .menu .menu__flavors-item:first-child {
   background-color: #c22a39;
   color: #fff;
-  border-radius: 10px;
-}
-.menu .menu__flavors-item:nth-child(even) {
-  background-color: linear-gradient(to bottom, #f8faff, #eff3fa 70.71%);
   border-radius: 10px;
 }
 .menu .menu__flavors-item th {
@@ -34,6 +30,14 @@
 }
 .menu .menu__flavors-item td {
   margin: 0 2rem;
+  color: #c22a39;
+  font-weight: 500;
+}
+.menu .menu__flavors-item:nth-child(even) {
+  background-color: #df9ab1;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.4rem 0;
 }
 .menu .menu__flavors-item td:first-child {
   text-align: start;
