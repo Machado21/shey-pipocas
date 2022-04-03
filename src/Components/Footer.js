@@ -26,8 +26,8 @@ const Footer = ({ setNavbarClick }) => {
             <li className="menu__item" onClick={() => setNavbarClick("Home")}>
               <p className="menu__link">Home</p>
             </li>
-            <li className="menu__item" onClick={() => setNavbarClick("Sobre")}>
-              <p className="menu__link">Sobre</p>
+            <li className="menu__item" onClick={() => setNavbarClick("Menu")}>
+              <p className="menu__link">Menu</p>
             </li>
             <li className="menu__item" onClick={() => setNavbarClick("Fotos")}>
               <p className="menu__link">Fotos</p>
