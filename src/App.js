@@ -57,11 +57,13 @@ const App = () => {
           }
         }}
       >
-        <img
+        {/* <img
           src="/images/home-popcorn.jpg"
           alt="logo da shey pipocas gourmet"
           title="Credit: Photo by Yulia Khlebnikova at https://unsplash.com/photos/iuwMdNq0-s4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-        />
+        /> */}
+        <img src="/images/popcorn-nutella.jpg" alt="logo da shey pipocas gourmet" />
+
         <h1>Pipocas Gourmet para toda família</h1>
       </div>
       <div
