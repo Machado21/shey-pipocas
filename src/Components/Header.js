@@ -1,22 +1,56 @@
 import "../styles/header.css";
 
-const Header = ({ setNavbarClick }) => {
-  return (
-    <header className="header container">
-      <img src="/images/logo.png" alt="logo da shey pipocas gourmet" className="header__logo" />
+import { useState, useEffect } from "react";
 
+const Header = ({ setNavbarClick }) => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  useEffect(() => {
+    const head = document.querySelector("header");
+    if (toggleMenu === true) {
+      head.classList.add("active");
+    } else {
+      head.classList.remove("active");
+    }
+  }, [toggleMenu]);
+
+  return (
+    <header className="container header ">
+      <img
+        src="/images/logo.png"
+        alt="logo da shey pipocas gourmet"
+        className="header__logo"
+      />
+      <button
+        className="button__mobile"
+        onClick={() => setToggleMenu(!toggleMenu)}
+      >
+        <span className="hamburguer"></span>
+      </button>
       <nav className="menu">
         <ul className="menu-list">
-          <li className="menu-list__item" onClick={() => setNavbarClick("Home")}>
+          <li
+            className="menu-list__item"
+            onClick={() => setNavbarClick("Home")}
+          >
             <a className="menu-list__link">Home</a>
           </li>
-          <li className="menu-list__item" onClick={() => setNavbarClick("Menu")}>
+          <li
+            className="menu-list__item"
+            onClick={() => setNavbarClick("Menu")}
+          >
             <a className="menu-list__link">Menu</a>
           </li>
-          <li className="menu-list__item" onClick={() => setNavbarClick("Fotos")}>
+          <li
+            className="menu-list__item"
+            onClick={() => setNavbarClick("Fotos")}
+          >
             <a className="menu-list__link">Fotos</a>
           </li>
-          <li className="menu-list__item" onClick={() => setNavbarClick("Contatos")}>
+          <li
+            className="menu-list__item"
+            onClick={() => setNavbarClick("Contatos")}
+          >
             <a className="menu-list__link">Contatos</a>
           </li>
         </ul>
