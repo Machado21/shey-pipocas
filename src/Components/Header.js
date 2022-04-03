@@ -49,9 +49,6 @@ const Header = ({ setNavbarClick }) => {
           >
             <a className="menu-list__link">Fotos</a>
           </li>
-          <li className="menu-list__item" onClick={() => setNavbarClick("Contatos")}>
-            <a className="menu-list__link">Contatos</a>
-          </li>
         </ul>
       </nav>
     </header>

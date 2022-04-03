@@ -16,6 +16,20 @@ body {
   justify-content: center;
   padding: 5% 0;
 }
+.App h2 {
+  font-size: 2rem;
+  color: #ffabdb;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5% 0;
+}
+.App h3 {
+  font-size: 1.5rem;
+  color: #ffabdb;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5% 0;
+}
 .App .Home {
   color: #c22a39;
   position: relative;
