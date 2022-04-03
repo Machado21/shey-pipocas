@@ -46,6 +46,14 @@ body {
     .images {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      @media @phone {
+        grid-template-columns: 1fr;
+        gap: 0.5%;
+      }
+      @media @tablet {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5%;
+      }
       gap: 2%;
       padding: 2%;
       img {
@@ -58,6 +66,9 @@ body {
           cursor: pointer;
         }
         transition: 0.4s;
+        @media @tablet {
+          height: 45vh;
+        }
       }
     }
   }
