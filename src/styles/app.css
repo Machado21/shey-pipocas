@@ -56,6 +56,9 @@ body {
     white-space: inherit;
   }
 }
+.App .Fotos h1 {
+  text-shadow: 1px 1px 5px #ffabdb;
+}
 .App .Fotos .images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
