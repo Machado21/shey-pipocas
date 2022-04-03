@@ -6,7 +6,14 @@ body {
   padding: 0 6%;
 }
 .App {
+  color: #ffabdb;
   overflow-x: hidden;
+}
+.App h1 {
+  font-size: 2.5rem;
+  color: #ffabdb;
+  display: flex;
+  justify-content: center;
 }
 .App .Home {
   color: #c22a39;
@@ -33,4 +40,20 @@ body {
   .App .Home {
     white-space: inherit;
   }
+}
+.App .Fotos .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2%;
+  padding: 2%;
+}
+.App .Fotos .images img {
+  width: 100%;
+  object-fit: cover;
+  height: 70vh;
+  transition: 0.4s;
+}
+.App .Fotos .images img:hover {
+  transform: translateY(-5%);
+  transition: 0.4s;
 }
