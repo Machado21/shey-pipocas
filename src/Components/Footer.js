@@ -7,26 +7,26 @@ const Footer = ({ setNavbarClick }) => {
         <div className="footer">
           <div className="contact-info">
             <div className="area-1">
+              <h2>Contato</h2>
+              <p>WhatsApp: (95) 99155-6906</p>
+              <p>E-mail: pgdasherry@gmail.com</p>
+            </div>
+            <div className="area-2">
               <h2>Sobre</h2>
               <p>Empreendedora</p>
               <p>Boa Vista-RR</p>
               <p>Proporcionar combinações, variedades e sabores irresistíveis</p>
               <p>Eventos, festas, brindes, lembrancinhas e consumo</p>
             </div>
-            <div className="area-2">
-              <h2>Contato</h2>
-              <p>WhatsApp: (95) 99155-6906</p>
-              <p>E-mail: pgdasherry@gmail.com</p>
-            </div>
             <div className="area-3">
+              <h2>Horários de Funcionamento</h2>
+              <p>Segunda à Sexta: 09:00 às 19:00</p>
+            </div>
+            <div className="area-4">
               <h2>Endereço</h2>
               <p>CEP: 69313582</p>
               <p>Roraima, Boa Vista, Caranâ</p>
               <p>Rua moysés teixeira hausen, 567</p>
-            </div>
-            <div className="area-4">
-              <h2>Horários de Funcionamento</h2>
-              <p>Segunda à Sexta: 09:00 às 19:00</p>
             </div>
           </div>
           <ul className="social-icon">
