@@ -9,16 +9,32 @@
   margin: 1rem;
 }
 .menu .menu__flavors-item {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  margin: 1.6rem;
+  width: 100%;
+  margin: 1.6rem auto;
 }
-.menu .menu__flavors-item h2 {
+.menu .menu__flavors-item:first-child {
+  background-color: #c22a39;
+  color: #fff;
+  border-radius: 10px;
+}
+.menu .menu__flavors-item:nth-child(even) {
+  background-color: linear-gradient(to bottom, #f8faff, #eff3fa 70.71%);
+  border-radius: 10px;
+}
+.menu .menu__flavors-item th {
+  width: 3.5rem;
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.menu .menu__flavors-item td {
   margin: 0 2rem;
 }
-.menu .menu__flavors-item p {
-  margin: 0 2rem;
+.menu .menu__flavors-item td:first-child {
+  text-align: start;
 }

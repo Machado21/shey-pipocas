@@ -1,3 +1,6 @@
+@import "colors.less";
+@import "mediaQuery.less";
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -10,21 +13,44 @@
   }
 
   .menu__flavors-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-    margin: 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
-    h2 {
+    align-items: center;
+
+    width: 100%;
+
+    margin: 1.6rem auto;
+
+    &:first-child {
+      background-color: @font-color;
+      color: @font-white;
+
+      border-radius: 10px;
+    }
+
+    &:nth-child(even) {
+      background-color: @background-1;
+
+      border-radius: 10px;
+    }
+
+    th {
+      width: 3.5rem;
+
       font-size: 1.2em;
-      font-weight: 500;
-    
+      font-weight: 600;
+      text-align: center;
+
+      margin: 0 auto;
+      padding: 0.5rem;
+    }
+
+    td {
       margin: 0 2rem;
     }
-    
-    p {
-      margin: 0 2rem;
+    td:first-child {
+      text-align: start;
     }
   }
 }
