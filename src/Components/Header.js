@@ -2,7 +2,7 @@ import "../styles/header.css";
 
 import { useState, useEffect } from "react";
 
-const Header = ({ setNavbarClick }) => {
+const Header = ({ showNav, setNavbarClick }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const Header = ({ setNavbarClick }) => {
   }, [toggleMenu]);
 
   return (
-    <header className="container header ">
+    <header className={showNav ? "show-nav" : "container header "}>
       <img src="/images/logo.png" alt="logo da shey pipocas gourmet" className="header__logo" />
       <button className="button__mobile" onClick={() => setToggleMenu(!toggleMenu)}>
         <span className="hamburguer"></span>

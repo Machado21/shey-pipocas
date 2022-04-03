@@ -7,8 +7,9 @@ import { useState, useRef, useEffect } from "react";
 
 const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [transparent, setTransparent] = useState(true);
+  const [scrollUp, setScrollUp] = useState(40);
   const [navbarClick, setNavbarClick] = useState("");
+  const [showNav, setShowNav] = useState(true);
 
   const divRef = useRef([]);
   //Create a function to return scroll position
@@ -26,10 +27,18 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    if (scrollPosition < 40) {
-      setTransparent(true);
+    if (scrollPosition > 40) {
+      if (scrollPosition - scrollUp >= 0) {
+        if (scrollPosition > scrollUp) {
+          setScrollUp(scrollPosition);
+        }
+        if (showNav) setShowNav(false);
+      } else if (scrollPosition - scrollUp < -160) {
+        setScrollUp(scrollPosition);
+        setShowNav(true);
+      }
     } else {
-      setTransparent(false);
+      setShowNav(true);
     }
   }, [scrollPosition]);
 
@@ -59,7 +68,7 @@ const App = () => {
   }
   return (
     <div className="App">
-      <Header transparent={transparent} setNavbarClick={setNavbarClick} />
+      <Header showNav={showNav} setNavbarClick={setNavbarClick} />
       <div
         className="Home"
         ref={(item) => {
