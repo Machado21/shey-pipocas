@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  transition: 1s;
+  transition: cubic-bezier(0.95, 0.05, 0.795, 0.035) 1s;
   position: fixed;
   z-index: 1;
   transform: translateX(100%);
@@ -102,7 +102,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  transition: 1s;
+  transition: cubic-bezier(0.95, 0.05, 0.795, 0.035) 1s;
   position: fixed;
   z-index: 1;
   transform: translateX(100%);
