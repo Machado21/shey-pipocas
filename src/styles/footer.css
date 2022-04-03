@@ -41,6 +41,14 @@
   color: #fff;
 }
 @media only screen and (min-width: 320px) and (max-width: 600px) {
+  .footer-container .footer .contact-info {
+    grid-template-columns: 1fr;
+    gap: 2%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   .footer-container .footer {
     padding: 0;
   }
