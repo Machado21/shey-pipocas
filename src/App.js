@@ -41,8 +41,7 @@ const App = () => {
 
   function scrollToDiv(props) {
     if (props !== "") {
-      if (props === "Home")
-        divRef.current[0]?.scrollIntoView({ behavior: "smooth" });
+      if (props === "Home") divRef.current[0]?.scrollIntoView({ behavior: "smooth" });
       else if (props === "Menu")
         divRef.current[1]?.scrollIntoView({
           behavior: "smooth",
@@ -50,11 +49,6 @@ const App = () => {
         });
       else if (props === "Fotos")
         divRef.current[2]?.scrollIntoView({
-          behavior: "smooth",
-          block: "center",
-        });
-      else if (props === "Contatos")
-        divRef.current[3]?.scrollIntoView({
           behavior: "smooth",
           block: "center",
         });
@@ -109,17 +103,6 @@ const App = () => {
           <img src="/images/bags-funny.png" alt="logo da shey pipocas gourmet" />
           <img src="/images/bags-small.png" alt="logo da shey pipocas gourmet" />
         </div>
-      </div>
-      <div
-        className="Contatos"
-        ref={(item) => {
-          if (divRef.current.length === 3) {
-            divRef.current.push(item);
-          }
-        }}
-      >
-        <h1>Contatos</h1>
-        <img src="/images/logo-shey.jpeg" alt="logo da shey pipocas gourmet" />
       </div>
       <Footer setNavbarClick={setNavbarClick} />
     </div>
