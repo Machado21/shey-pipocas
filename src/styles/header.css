@@ -102,6 +102,8 @@
     top: -7px;
   }
   .header.active .menu {
+    background-color: #ffe9ed;
+    position: fixed;
     visibility: visible;
     transition: 0.3s;
     transform: translateX(-4vw);

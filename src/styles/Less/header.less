@@ -60,7 +60,6 @@
     text-align: center;
     align-self: center;
     @media @phone {
-      // display: block;
       visibility: hidden;
       position: absolute;
       top: 7.5rem;
@@ -68,7 +67,6 @@
       z-index: 1;
       transition: 0.3s;
       height: 100vh;
-      // height: calc(100vh - 50px);
       transform: translateX(100vw);
       width: 0vw;
       .menu-list {
@@ -118,6 +116,8 @@
     }
 
     .menu {
+      background-color: @color__background__03;
+      position: fixed;
       visibility: visible;
       transition: 0.3s;
       transform: translateX(-4vw);
