@@ -10,8 +10,8 @@ const Header = ({ setNavbarClick }) => {
           <li className="menu-list__item" onClick={() => setNavbarClick("Home")}>
             <a className="menu-list__link">Home</a>
           </li>
-          <li className="menu-list__item" onClick={() => setNavbarClick("Sobre")}>
-            <a className="menu-list__link">Sobre</a>
+          <li className="menu-list__item" onClick={() => setNavbarClick("Menu")}>
+            <a className="menu-list__link">Menu</a>
           </li>
           <li className="menu-list__item" onClick={() => setNavbarClick("Fotos")}>
             <a className="menu-list__link">Fotos</a>

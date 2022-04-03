@@ -1,7 +1,8 @@
 import "./styles/reset.css";
 import "./styles/app.css";
-import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+import Menu from "./Components/Menu";
+import Footer from "./Components/Footer";
 import { useState, useRef, useEffect } from "react";
 
 const App = () => {
@@ -40,10 +41,23 @@ const App = () => {
 
   function scrollToDiv(props) {
     if (props !== "") {
-      if (props === "Home") divRef.current[0]?.scrollIntoView({ behavior: "smooth" });
-      else if (props === "Sobre") divRef.current[1]?.scrollIntoView({ behavior: "smooth", block: "center" });
-      else if (props === "Fotos") divRef.current[2]?.scrollIntoView({ behavior: "smooth", block: "center" });
-      else if (props === "Contatos") divRef.current[3]?.scrollIntoView({ behavior: "smooth", block: "center" });
+      if (props === "Home")
+        divRef.current[0]?.scrollIntoView({ behavior: "smooth" });
+      else if (props === "Menu")
+        divRef.current[1]?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      else if (props === "Fotos")
+        divRef.current[2]?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      else if (props === "Contatos")
+        divRef.current[3]?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
     }
   }
   return (
@@ -65,15 +79,16 @@ const App = () => {
         />
       </div>
       <div
-        className="Sobre"
+        className="Menu"
         ref={(item) => {
           if (divRef.current.length === 1) {
             divRef.current.push(item);
           }
         }}
       >
-        <h1>Sobre</h1>
-        <img src="/images/logo-shey.jpeg" alt="logo da shey pipocas gourmet" />
+        <section className="menu__section">
+          <Menu />
+        </section>
       </div>
       <div
         className="Fotos"
