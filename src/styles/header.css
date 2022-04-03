@@ -52,19 +52,18 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .header .menu {
-    display: block;
     visibility: hidden;
     position: absolute;
-    width: 100%;
     top: 7.5rem;
     background: #ffffff;
     z-index: 1;
     transition: 0.3s;
-    height: calc(100vh - 50px);
-    transform: translateX(100%);
+    height: 100vh;
+    transform: translateX(100vw);
+    width: 0vw;
   }
   .header .menu .menu-list {
-    display: flex;
+    display: none;
     flex-direction: column;
   }
   .header .menu .menu-list .menu-list__item {
@@ -88,6 +87,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 3% 4%;
+    width: 100%;
   }
 }
 .header.active .hamburguer {
@@ -102,7 +102,13 @@
 }
 .header.active .menu {
   visibility: visible;
-  overflow-y: auto;
   transition: 0.3s;
-  transform: translateX(-4%);
+  transform: translateX(-4vw);
+  width: 100vw;
+}
+.header.active .menu .menu-list {
+  display: flex;
+}
+.header.active .menu .menu-list .menu-list__item {
+  margin: 5%;
 }

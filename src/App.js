@@ -50,7 +50,6 @@ const App = () => {
       else if (props === "Fotos")
         divRef.current[2]?.scrollIntoView({
           behavior: "smooth",
-          block: "center",
         });
     }
   }
