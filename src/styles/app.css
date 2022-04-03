@@ -54,6 +54,7 @@ body {
   transition: 0.4s;
 }
 .App .Fotos .images img:hover {
-  transform: translateY(-5%);
+  transform: translateY(-3%);
   transition: 0.4s;
+  cursor: pointer;
 }
