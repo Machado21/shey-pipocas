@@ -104,28 +104,30 @@
     width: 100%;
   }
 }
-.header.active {
-  .hamburguer {
-    border-top-color: transparent;
-  }
-  .hamburguer::before {
-    transform: rotate(135deg);
-  }
-  .hamburguer::after {
-    transform: rotate(-135deg);
-    top: -7px;
-  }
+@media @phone {
+  .header.active {
+    .hamburguer {
+      border-top-color: transparent;
+    }
+    .hamburguer::before {
+      transform: rotate(135deg);
+    }
+    .hamburguer::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
 
-  .menu {
-    visibility: visible;
-    transition: 0.3s;
-    transform: translateX(-4vw);
-    width: 100vw;
-    .menu-list {
-      display: flex;
+    .menu {
+      visibility: visible;
+      transition: 0.3s;
+      transform: translateX(-4vw);
+      width: 100vw;
+      .menu-list {
+        display: flex;
 
-      .menu-list__item {
-        margin: 5%;
+        .menu-list__item {
+          margin: 5%;
+        }
       }
     }
   }

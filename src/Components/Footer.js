@@ -71,6 +71,9 @@ const Footer = ({ setNavbarClick }) => {
             <li className="menu__item" onClick={() => setNavbarClick("Fotos")}>
               <p className="menu__link">Fotos</p>
             </li>
+            <li className="menu__item" onClick={() => setNavbarClick("Contatos")}>
+              <p className="menu__link">Contatos</p>
+            </li>
           </ul>
           <p>&copy;Rodrigues Desenvolvimento</p>
           <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

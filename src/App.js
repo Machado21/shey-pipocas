@@ -51,6 +51,10 @@ const App = () => {
         divRef.current[2]?.scrollIntoView({
           behavior: "smooth",
         });
+      else if (props === "Contatos")
+        divRef.current[3]?.scrollIntoView({
+          behavior: "smooth",
+        });
     }
   }
   return (
@@ -103,7 +107,15 @@ const App = () => {
           <img src="/images/bags-small.png" alt="logo da shey pipocas gourmet" />
         </div>
       </div>
-      <Footer setNavbarClick={setNavbarClick} />
+      <div
+        ref={(item) => {
+          if (divRef.current.length === 3) {
+            divRef.current.push(item);
+          }
+        }}
+      >
+        <Footer setNavbarClick={setNavbarClick} />
+      </div>
     </div>
   );
 };
