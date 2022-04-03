@@ -1,0 +1,44 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .menu__title {
+  font-size: 2em;
+  font-weight: 500;
+  margin: 1rem;
+}
+.menu .menu__flavors-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  margin: 1rem auto;
+}
+.menu .menu__flavors-item:first-child {
+  background-color: #c22a39;
+  color: #fff;
+  border-radius: 10px;
+}
+.menu .menu__flavors-item th {
+  width: 3.5rem;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.menu .menu__flavors-item td {
+  margin: 0 2rem;
+  color: #c22a39;
+  font-weight: 500;
+}
+.menu .menu__flavors-item:nth-child(even) {
+  background-color: #df9ab1;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.4rem 0;
+}
+.menu .menu__flavors-item td:first-child {
+  text-align: start;
+}
