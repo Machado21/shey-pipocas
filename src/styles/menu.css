@@ -1,10 +1,10 @@
-.menu {
+.menu-table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: auto;
+  overflow: hidden;
 }
-.menu .menu__title {
+.menu-table .menu__title {
   font-size: 2em;
   font-weight: 500;
   color: #ffabdb;
@@ -13,11 +13,12 @@
   text-align: center;
 }
 @media only screen and (min-width: 320px) and (max-width: 600px) {
-  .menu .menu__flavors {
+  .menu-table .menu__flavors {
     width: 90%;
+    overflow-x: auto;
   }
 }
-.menu .table__head {
+.menu-table .table__head {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   background-color: #c22a39;
@@ -26,11 +27,11 @@
   border-radius: 10px;
 }
 @media only screen and (min-width: 320px) and (max-width: 600px) {
-  .menu .table__head {
+  .menu-table .table__head {
     grid-template-columns: 4fr 3fr 3fr;
   }
 }
-.menu .table__head th {
+.menu-table .table__head th {
   width: 3.5rem;
   font-size: 1.2em;
   font-weight: 600;
@@ -38,24 +39,29 @@
   margin: 0 auto;
   padding: 0.5rem;
 }
-.menu .menu__flavors-item {
+.menu-table .menu__flavors-item {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   justify-items: center;
   width: 100%;
   margin: 1rem auto;
 }
-.menu .menu__flavors-item td {
+.menu-table .menu__flavors-item td {
   margin: 0 2rem;
   color: #c22a39;
   font-weight: 500;
 }
-.menu .menu__flavors-item:nth-child(even) {
+.menu-table .menu__flavors-item:nth-child(even) {
   background-color: #df9ab1;
   color: #fff;
   border-radius: 10px;
   padding: 0.4rem 0;
 }
-.menu .menu__flavors-item td:first-child {
+.menu-table .menu__flavors-item td:first-child {
   justify-self: start;
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .menu-table {
+    overflow: auto;
+  }
 }

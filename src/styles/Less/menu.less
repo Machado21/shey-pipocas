@@ -1,11 +1,11 @@
 @import "colors.less";
 @import "mediaQuery.less";
 
-.menu {
+.menu-table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: auto;
+  overflow: hidden;
 
   .menu__title {
     font-size: 2em;
@@ -21,6 +21,7 @@
   .menu__flavors {
     @media @phone {
       width: 90%;
+      overflow-x: auto;
     }
   }
   .table__head {
@@ -78,5 +79,8 @@
     td:first-child {
       justify-self: start;
     }
+  }
+  @media @phone {
+    overflow: auto;
   }
 }

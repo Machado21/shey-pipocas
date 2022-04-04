@@ -2,7 +2,7 @@ import "../styles/menu.css";
 
 const Menu = ({ setNavbarClick }) => {
   return (
-    <div className="menu">
+    <div className="menu-table">
       <h1 className="menu__title">Menu Pipocas Gourmet</h1>
       <table className="menu__flavors">
         <thead>
