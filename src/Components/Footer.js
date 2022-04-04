@@ -19,7 +19,8 @@ const Footer = ({ setNavbarClick }) => {
             </div>
             <div className="area-3">
               <h2>Horários de Funcionamento</h2>
-              <p>Segunda à Sexta: 09:00 às 19:00</p>
+              <p>Segunda à Sexta: 09:00h às 19:00h</p>
+              <p>Sábados: 09:00h às 17:00h</p>
             </div>
             <div className="area-4">
               <h2>Endereço</h2>
