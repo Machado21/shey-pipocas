@@ -14,7 +14,6 @@ const Footer = ({ setNavbarClick }) => {
             <div className="area-2">
               <h2>Sobre</h2>
               <p>Empreendedora</p>
-              <p>Boa Vista-RR</p>
               <p>Proporcionar combinações, variedades e sabores irresistíveis</p>
               <p>Eventos, festas, brindes, lembrancinhas e consumo</p>
             </div>
@@ -25,7 +24,7 @@ const Footer = ({ setNavbarClick }) => {
             <div className="area-4">
               <h2>Endereço</h2>
               <p>CEP: 69313582</p>
-              <p>Roraima, Boa Vista, Caranâ</p>
+              <p>Roraima, Boa Vista, Caranã</p>
               <p>Rua moysés teixeira hausen, 567</p>
             </div>
           </div>
