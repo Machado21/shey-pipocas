@@ -7,9 +7,8 @@
 .menu-table .menu__title {
   font-size: 2em;
   font-weight: 500;
-  color: #ffabdb;
+  color: #d97bb0;
   margin: 1rem;
-  text-shadow: 1px 1px 5px #ffabdb;
   text-align: center;
 }
 @media only screen and (min-width: 320px) and (max-width: 600px) {
@@ -20,7 +19,7 @@
 }
 .menu-table .table__head {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   background-color: #c22a39;
   color: #fff;
   margin: inherit;
@@ -28,7 +27,7 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .menu-table .table__head {
-    grid-template-columns: 4fr 3fr 3fr;
+    grid-template-columns: 4fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
   }
 }
 .menu-table .table__head th {
@@ -41,7 +40,7 @@
 }
 .menu-table .menu__flavors-item {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
   width: 100%;
   margin: 1rem auto;
