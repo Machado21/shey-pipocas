@@ -1,42 +1,65 @@
 .menu-table {
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
+  width: 60%;
+  margin: 0 auto;
   overflow: hidden;
 }
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .menu-table {
+    width: 100%;
+  }
+}
 .menu-table .menu__title {
-  font-size: 2em;
-  font-weight: 500;
-  color: #d97bb0;
   margin: 1rem;
+  padding: 2rem 0 0 0;
   text-align: center;
 }
-@media only screen and (min-width: 320px) and (max-width: 600px) {
-  .menu-table .menu__flavors {
-    width: 90%;
-    overflow-x: auto;
-  }
+.menu-table h2 {
+  color: #d97bb0;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
 }
-.menu-table .table__head {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  background-color: #c22a39;
+.menu-table h3 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
   color: #fff;
-  margin: inherit;
-  border-radius: 10px;
+  background-color: #d97bb0;
+}
+.menu-table .div__flavors {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: #c22a39;
+}
+.menu-table .menu__flavors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
 }
 @media only screen and (min-width: 320px) and (max-width: 600px) {
-  .menu-table .table__head {
-    grid-template-columns: 4fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
-  }
 }
-.menu-table .table__head th {
-  width: 3.5rem;
-  font-size: 1.2em;
-  font-weight: 600;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0.5rem;
+.menu-table .title__table {
+  width: 5rem;
+  margin: 0 0 0.5rem 0;
+  color: #fff;
+  background-color: #c22a39;
+}
+.menu-table .weight__table {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0.2rem 0;
+  align-items: center;
+}
+.menu-table .value__table {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0.2rem 0;
 }
 .menu-table .menu__flavors-item {
   display: grid;
@@ -49,12 +72,6 @@
   margin: 0 2rem;
   color: #c22a39;
   font-weight: 500;
-}
-.menu-table .menu__flavors-item:nth-child(even) {
-  background-color: #df9ab1;
-  color: #fff;
-  border-radius: 10px;
-  padding: 0.4rem 0;
 }
 .menu-table .menu__flavors-item td:first-child {
   justify-self: start;

@@ -2,59 +2,91 @@
 @import "mediaQuery.less";
 
 .menu-table {
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
+
+  width: 60%;
+  margin: 0 auto;
+
   overflow: hidden;
 
-  .menu__title {
-    font-size: 2em;
-    font-weight: 500;
-    color: @color__background__dark__03;
+  @media @phone {
+    width: 100%;
+  }
 
+  .menu__title {
     margin: 1rem;
+    padding: 2rem 0 0 0;
 
     // text-shadow: 1px 1px 3px @color__background__03;
     text-align: center;
   }
+  h2 {
+    color: @font-color3;
+    display: flex;
+    justify-content: center;
 
+    margin: 1rem auto;
+  }
+  h3 {
+    display: flex;
+    justify-content: center;
+
+    margin: 1rem;
+
+    padding: 1rem;
+
+    color: @font-white;
+    background-color: @color__background__dark__03;
+  }
+  .div__flavors {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    color: @font-color;
+  }
   .menu__flavors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100%;
+
     @media @phone {
-      width: 90%;
-      overflow-x: auto;
+      // overflow-x: auto;
     }
   }
-  .table__head {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
-    background-color: @font-color;
+  .title__table{
+    width: 5rem;
+
+    margin: 0 0 .5rem 0;
+
     color: @font-white;
+    background-color: @font-color;
+  }
+  .weight__table {
+    display: flex;
+    flex-direction: column;
 
-    margin: inherit;
+    margin: 0 0 .2rem 0;
+    align-items: center;
+    
 
-    border-radius: 10px;
+  }
 
-    @media @phone {
-      grid-template-columns: 4fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
-    }
+  .value__table {
+    display: flex;
+    flex-direction: column;
 
-    th {
-      width: 3.5rem;
-
-      font-size: 1.2em;
-      font-weight: 600;
-      text-align: center;
-
-      margin: 0 auto;
-      padding: 0.5rem;
-    }
+    margin: 0 0 .2rem 0;
   }
 
   .menu__flavors-item {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
 
     justify-items: center;
 
@@ -66,15 +98,6 @@
       margin: 0 2rem;
       color: @font-color;
       font-weight: 500;
-    }
-
-    &:nth-child(even) {
-      background-color: #df9ab1;
-      color: @font-white;
-
-      border-radius: 10px;
-
-      padding: 0.4rem 0;
     }
 
     td:first-child {
